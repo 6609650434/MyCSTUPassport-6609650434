@@ -10,7 +10,7 @@
 
     <style>
         body{
-            background-color: rgb(255, 176, 72);
+            background-color: rgb(255, 140, 0);
             font-family: 'Roboto Slab', serif;
             font-family: 'Sriracha', cursive;
             
@@ -20,19 +20,15 @@
             margin-top: 1px;
             text-align: center;
             font-size:26px;
-            color: aliceblue;
-            background: -webkit-linear-gradient(0deg, transparent 0%, #ffffff 50%);
+            color:#333;
+            background: -webkit-linear-gradient(0deg, transparent 0%, #363535 50%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
             
         }
         .image{
             text-align: center;
-            color: rgb(255, 255, 255);
-            background: -webkit-linear-gradient(0deg, transparent 0%, #ffffff 50%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-            
+           
         }
         .image img{
             margin :auto;
@@ -59,6 +55,16 @@ box-shadow: 2px 2px 5px 0px rgba(255,255,255,1);
 -moz-box-shadow: 2px 2px 5px 0px rgba(255,255,255,1);
 box-shadow: 2px 2px 5px 0px rgba(255,255,255,1);
         }
+        .image a{
+            text-decoration: none;
+            
+        }
+        .image a:visited{
+          color: #333;
+        }
+        .image a:hover{
+            color: #ffffff;
+        }
         span{
         font-size: 23px;
         margin-left: 40px;
@@ -74,7 +80,7 @@ box-shadow: 2px 2px 5px 0px rgba(255,255,255,1);
 <body>
     <div class="text">
         <h1>Thippatai  Sirirak</h1><hr>
-        <p><em>Thummasat University</em></p>
+        <p><slot><em>Thummasat University</em></slot></p>
         
 
     </div>
